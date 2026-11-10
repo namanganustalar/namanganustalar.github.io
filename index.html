@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Namangan ustalar — santexnik, elektrik, avto usta | Telegram bot</title>
+<meta name="description" content="Namangandagi santexnik, elektrik, avto usta va boshqa 17 kasb ustalarini Telegramda 1 daqiqada toping. Usta bo'lsangiz — bepul ro'yxatdan o'ting.">
+<link rel="canonical" href="https://namanganustalar.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0D47A1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uz_UZ">
+<meta property="og:title" content="Namangan ustalar — Namangandagi ustalar bir joyda">
+<meta property="og:description" content="Santexnik, elektrik, avto usta va boshqa kasblar. Telegramda 1 daqiqada toping.">
+<meta property="og:url" content="https://namanganustalar.github.io/">
+<meta property="og:image" content="https://namanganustalar.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","name":"Namangan ustalar","url":"https://namanganustalar.github.io/","inLanguage":"uz"},
+{"@type":"Organization","name":"Namangan ustalar","url":"https://namanganustalar.github.io/","sameAs":["https://t.me/NamanganUstaBot"]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Namanganda santexnik, elektrik yoki boshqa ustani qayerdan topaman?","acceptedAnswer":{"@type":"Answer","text":"Telegramda @NamanganUstaBot botini oching, «Usta topish» tugmasini bosing va kerakli kasbni tanlang. Bot ustalarning telefon raqamini ko'rsatadi."}},
+{"@type":"Question","name":"Bot pullikmi?","acceptedAnswer":{"@type":"Answer","text":"Hozircha mijozlar ham, ustalar ham botdan bepul foydalanadi."}},
+{"@type":"Question","name":"Usta bo'lib qanday ro'yxatdan o'taman?","acceptedAnswer":{"@type":"Answer","text":"Botda «Usta bo'lib ro'yxatdan o'tish» tugmasini bosing, ismingiz, telefon raqamingiz, kasbingiz va hududingizni kiriting. Bu taxminan 1 daqiqa vaqt oladi."}},
+{"@type":"Question","name":"Qaysi tumanlardagi ustalar bor?","acceptedAnswer":{"@type":"Answer","text":"Namangan shahri va viloyat tumanlari: Davlatobod, Chortoq, Chust, Kosonsoy, Mingbuloq, Norin, Pop, To'raqo'rg'on, Uchqo'rg'on, Uychi, Yangiqo'rg'on."}},
+{"@type":"Question","name":"Ish namunalarini ko'rish mumkinmi?","acceptedAnswer":{"@type":"Answer","text":"Ha. Ustalar o'z ishlarining rasmlarini qo'shadi, mijoz usta kartochkasi ostidagi «Namuna» tugmasi orqali ularni ko'radi."}}
+]}]}
+</script>
+<style>
+:root{--bd:#0D47A1;--bl:#1E88E5;--am:#FFB300;--ink:#0A1F44;--mut:#546E7A;--bg:#F4F8FD;--card:#fff;--r:20px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-text-size-adjust:100%}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:10;background:rgba(13,71,161,.96);backdrop-filter:blur(8px)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;text-decoration:none;font-size:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font-weight:800;text-decoration:none;font-size:16px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-am{background:var(--am);color:var(--bd)}
+.btn-ghost{border:2px solid rgba(255,255,255,.7);color:#fff}
+.btn-sm{min-height:40px;padding:0 18px;font-size:15px}
+.hero{background:linear-gradient(135deg,var(--bd),var(--bl));color:#fff;padding:56px 0 72px;overflow:hidden}
+.hero .wrap{display:grid;gap:36px;align-items:center}
+@media(min-width:860px){.hero .wrap{grid-template-columns:1.15fr .85fr}}
+h1{font-size:clamp(32px,6.4vw,54px);line-height:1.08;margin:0 0 16px;font-weight:900;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--am)}
+.lead{font-size:clamp(17px,2.6vw,20px);opacity:.95;margin:0 0 28px;max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.note{margin-top:14px;font-size:14px;opacity:.85}
+.mock{background:#fff;color:var(--ink);border-radius:28px;padding:16px;box-shadow:0 24px 60px rgba(0,0,0,.28);max-width:380px;margin:0 auto;width:100%}
+.mock .hd{background:var(--bd);color:#fff;border-radius:16px;padding:12px 14px;font-weight:800;display:flex;gap:10px;align-items:center}
+.mock .dot{width:30px;height:30px;border-radius:50%;background:var(--am);color:var(--bd);display:grid;place-items:center;font-weight:900}
+.mock .bub{background:#EAF2FC;border-radius:14px;padding:10px 14px;margin:12px 0 10px;font-weight:600;font-size:15px}
+.mock .chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mock .chips span{background:#D7E8FA;color:var(--bd);font-weight:800;font-size:14px;border-radius:12px;padding:10px 6px;text-align:center}
+.mock .chips span.on{background:var(--am)}
+section{padding:60px 0}
+h2{font-size:clamp(26px,4.6vw,38px);line-height:1.15;margin:0 0 10px;font-weight:900;letter-spacing:-.01em}
+.sub{color:var(--mut);margin:0 0 32px;max-width:40em;font-size:17px}
+.steps{display:grid;gap:16px;counter-reset:s}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:var(--card);border-radius:var(--r);padding:24px;box-shadow:0 6px 22px rgba(13,71,161,.08)}
+.step b.n{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--am);color:var(--bd);font-size:20px;margin-bottom:12px}
+.step h3{margin:0 0 6px;font-size:20px}
+.step p{margin:0;color:var(--mut)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.cat{background:var(--card);border-radius:var(--r);padding:20px;text-decoration:none;box-shadow:0 6px 22px rgba(13,71,161,.08);display:block;transition:transform .15s,box-shadow .15s}
+.cat:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(13,71,161,.16)}
+.cat .ic{font-size:30px;line-height:1}
+.cat h3{margin:10px 0 4px;font-size:19px}
+.cat p{margin:0;color:var(--mut);font-size:15px}
+.band{background:var(--bd);color:#fff}
+.band .sub{color:rgba(255,255,255,.85)}
+.perks{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-bottom:30px}
+.perk{background:rgba(255,255,255,.1);border-radius:var(--r);padding:20px}
+.perk h3{margin:0 0 6px;font-size:19px;color:var(--am)}
+.perk p{margin:0;opacity:.92;font-size:15.5px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+.chips li{background:var(--card);border-radius:999px;padding:9px 16px;font-weight:700;box-shadow:0 4px 14px rgba(13,71,161,.08)}
+details{background:var(--card);border-radius:16px;padding:16px 20px;margin-bottom:10px;box-shadow:0 4px 14px rgba(13,71,161,.07)}
+summary{font-weight:800;cursor:pointer;font-size:17px}
+details p{margin:10px 0 0;color:var(--mut)}
+footer{background:var(--ink);color:#B8C7DC;padding:36px 0;text-align:center;font-size:15px}
+footer a{color:var(--am);font-weight:700}
+.final{text-align:center;background:linear-gradient(135deg,var(--bd),var(--bl));color:#fff}
+.final .cta{justify-content:center}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/" aria-label="Namangan ustalar">
+    <svg width="34" height="34" viewBox="0 0 300 300" aria-hidden="true"><path d="M150 46 L266 142 V292 H34 V142 Z" fill="#fff" stroke="#fff" stroke-width="8" stroke-linejoin="round"/><path d="M14 152 L150 36 L286 152" fill="none" stroke="#FFB300" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/><g transform="translate(150 200) rotate(45) scale(.86) translate(-150 -175)" fill="#1565C0"><circle cx="150" cy="130" r="47"/><rect x="135" y="150" width="30" height="118" rx="15"/></g></svg>
+    Namangan ustalar</a>
+  <a class="btn btn-am btn-sm" href="https://t.me/NamanganUstaBot" rel="noopener">Telegramda ochish</a>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Namangandagi <em>ustalar</em> bir joyda</h1>
+    <p class="lead">Santexnik, elektrik, avto usta, qurilish va boshqa 17 kasb ustalarini Telegramda 1 daqiqada toping. Telefon raqami darrov ko'rinadi.</p>
+    <div class="cta">
+      <a class="btn btn-am" href="https://t.me/NamanganUstaBot" rel="noopener">🔍 Usta topish</a>
+      <a class="btn btn-ghost" href="https://t.me/NamanganUstaBot" rel="noopener">🛠 Usta bo'lsangiz — BEPUL</a>
+    </div>
+    <p class="note">Hozircha mijozlar ham, ustalar ham bepul foydalanadi. Telegram: @NamanganUstaBot</p>
+  </div>
+  <div class="mock" aria-hidden="true">
+    <div class="hd"><span class="dot">U</span> Namangan ustalar</div>
+    <div class="bub">Qaysi turdagi usta kerak?</div>
+    <div class="chips"><span>Santexnik</span><span class="on">Elektrik</span><span>Mashina</span><span>Qurilish</span><span>Telefon</span><span>Mebel</span></div>
+  </div>
+</div></div>
+
+<section id="qanday"><div class="wrap">
+  <h2>Namanganda usta qanday topiladi?</h2>
+  <p class="sub">Ro'yxatdan o'tish yoki ilova yuklash shart emas. Telegram bo'lsa bas.</p>
+  <div class="steps">
+    <div class="step"><b class="n">1</b><h3>Botni oching</h3><p>Telegramda <a href="https://t.me/NamanganUstaBot" rel="noopener"><b>@NamanganUstaBot</b></a> ni oching va «Usta topish» ni bosing.</p></div>
+    <div class="step"><b class="n">2</b><h3>Kasbni tanlang</h3><p>Santexnik, elektrik, avto usta yoki boshqa kasbni tanlang. Yo'nalish va tumanlar bo'yicha qidirish mumkin.</p></div>
+    <div class="step"><b class="n">3</b><h3>Ustaga qo'ng'iroq qiling</h3><p>Usta kartochkasida telefon raqami va ish namunalari bor. O'zingiz qo'ng'iroq qilasiz.</p></div>
+  </div>
+</div></section>
+
+<section id="kasblar" style="padding-top:0"><div class="wrap">
+  <h2>Namangan ustalari: barcha kasblar</h2>
+  <p class="sub">Har bir kasb bo'yicha ustalarni botda ko'rasiz. Biror kasbni bossangiz, bot ochiladi.</p>
+  <div class="grid">
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">🚰</div><h3>Santexnik</h3><p>Kran, quvur, unitaz, kanalizatsiya, suv isitgich</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">⚡</div><h3>Elektrik</h3><p>Sim tortish, rozetka, avtomat, yoritish</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">🚗</div><h3>Mashina ustalari</h3><p>Motorchi, hodovoy, moy almashtirish, avto elektrik, kuzov va bo'yoq, shinomontaj, evakuator</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">🏗</div><h3>Qurilish ustalari</h3><p>G'isht va beton, shpaklyovka, plitka, potolok, tom yopish, payvandchi</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">🚪</div><h3>Eshik-rom ustalari</h3><p>Eshik va deraza o'rnatish, ta'mirlash</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">🪑</div><h3>Mebel va duradgor</h3><p>Mebel yasash, ta'mirlash, yig'ish</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">📱</div><h3>Telefon ustalari</h3><p>Ekran, batareya, dasturiy ta'mir</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">💻</div><h3>Kompyuter va printer</h3><p>Noutbuk, kompyuter, printer ta'miri</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">🧊</div><h3>Maishiy texnika</h3><p>Muzlatgich, kir yuvish mashinasi, televizor, changyutgich</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">❄️</div><h3>Konditsioner ustalari</h3><p>O'rnatish, ta'mirlash, gaz to'ldirish</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">🔥</div><h3>Gaz va isitish</h3><p>Gaz plita, kolonka, kotyol, isitish tizimi</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">📹</div><h3>Kamera va Wi-Fi</h3><p>Videokuzatuv, Wi-Fi o'rnatish</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">🪟</div><h3>Oyna va alyumin</h3><p>Deraza, vitraj, alyumin konstruksiyalar</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">🔑</div><h3>Qulf ochish</h3><p>Qulf ochish va almashtirish</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">🧹</div><h3>Tozalash xizmati</h3><p>Uy va ofis tozalash</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">🚚</div><h3>Yuk tashish va gruzchik</h3><p>Yuk tashish, ko'chish, gruzchiklar</p></a>
+    <a class="cat" href="https://t.me/NamanganUstaBot" rel="noopener"><div class="ic">🧰</div><h3>Boshqa kasblar</h3><p>Tikuvchi, bog'bon, soatsoz va boshqalar</p></a>
+  </div>
+</div></section>
+
+<section class="band" id="ustalar"><div class="wrap">
+  <h2>Ustamisiz? Mijozlar sizni topsin</h2>
+  <p class="sub">Namangan ustalar botiga 1 daqiqada ro'yxatdan o'ting. Hozircha mutlaqo bepul.</p>
+  <div class="perks">
+    <div class="perk"><h3>Bepul ro'yxat</h3><p>Ism, telefon, kasb va hududingizni kiriting, tayyor.</p></div>
+    <div class="perk"><h3>Ish namunalari</h3><p>Qilgan ishlaringiz rasmini qo'shing, mijoz ko'proq ishonadi.</p></div>
+    <div class="perk"><h3>Mijoz so'rovlari</h3><p>Mijoz so'rov yuborsa, kasbingizdagi ustalarga xabar boradi.</p></div>
+    <div class="perk"><h3>Telefon raqamingiz</h3><p>Mijoz sizga to'g'ridan-to'g'ri qo'ng'iroq qiladi.</p></div>
+  </div>
+  <a class="btn btn-am" href="https://t.me/NamanganUstaBot" rel="noopener">🛠 Usta bo'lib ro'yxatdan o'tish</a>
+</div></section>
+
+<section id="tumanlar"><div class="wrap">
+  <h2>Namangan shahri va tumanlari</h2>
+  <p class="sub">Ustalarni hudud bo'yicha ko'rasiz.</p>
+  <ul class="chips">
+    <li>Namangan shahri</li><li>Davlatobod</li><li>Chortoq</li><li>Chust</li><li>Kosonsoy</li><li>Mingbuloq</li>
+    <li>Norin</li><li>Pop</li><li>To'raqo'rg'on</li><li>Uchqo'rg'on</li><li>Uychi</li><li>Yangiqo'rg'on</li>
+  </ul>
+</div></section>
+
+<section id="savollar" style="padding-top:0"><div class="wrap">
+  <h2>Ko'p so'raladigan savollar</h2>
+  <p class="sub"></p>
+  <details><summary>Namanganda santexnik, elektrik yoki boshqa ustani qayerdan topaman?</summary><p>Telegramda <b>@NamanganUstaBot</b> botini oching, «Usta topish» tugmasini bosing va kerakli kasbni tanlang. Bot ustalarning telefon raqamini ko'rsatadi.</p></details>
+  <details><summary>Bot pullikmi?</summary><p>Hozircha mijozlar ham, ustalar ham botdan bepul foydalanadi.</p></details>
+  <details><summary>Usta bo'lib qanday ro'yxatdan o'taman?</summary><p>Botda «Usta bo'lib ro'yxatdan o'tish» tugmasini bosing, ismingiz, telefon raqamingiz, kasbingiz va hududingizni kiriting. Taxminan 1 daqiqa vaqt oladi.</p></details>
+  <details><summary>Qaysi tumanlardagi ustalar bor?</summary><p>Namangan shahri va viloyat tumanlari: Davlatobod, Chortoq, Chust, Kosonsoy, Mingbuloq, Norin, Pop, To'raqo'rg'on, Uchqo'rg'on, Uychi, Yangiqo'rg'on.</p></details>
+  <details><summary>Ish namunalarini ko'rish mumkinmi?</summary><p>Ha. Ustalar o'z ishlarining rasmlarini qo'shadi, mijoz usta kartochkasi ostidagi «Namuna» tugmasi orqali ularni ko'radi.</p></details>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Hoziroq boshlang</h2>
+  <p class="sub" style="color:rgba(255,255,255,.9);margin-left:auto;margin-right:auto">Telegramda @NamanganUstaBot — Namangandagi ustalar bir joyda.</p>
+  <div class="cta"><a class="btn btn-am" href="https://t.me/NamanganUstaBot" rel="noopener">Botni ochish</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© Namangan ustalar · Telegram: <a href="https://t.me/NamanganUstaBot" rel="noopener">@NamanganUstaBot</a></div></footer>
+</body>
+</html>
